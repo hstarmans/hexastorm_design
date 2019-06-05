@@ -8,8 +8,8 @@ Deprecated folder contains the old design files of the Hexastorm. The first desi
 This design was hard to change or visualize. 
 The hexastorm logo generator can be used to create an STL from the Hexastrom logo. The Hexastorm logo will be used as a trademark for hexastorm and should be considered copy-right.
 The STLs of the proof of concept model were made with a startup license of SolidEdge. Only the STLs are shown online.
-The new design will be made with Freecad 0.18 using the [https://github.com/realthunder/FreeCAD_assembly3](assembly3] module by [https://github.com/realthunder](realthunder).
-The scanhead is calibrated with a [https://en.ids-imaging.com/home.html](ueye camera) for which a stand was developed. A cheaper alternative might be to use chips provided by the Japanese [https://www.visionproc.org/index.php](vision processing commnunity) on for example a Raspberry Pi 3.
+The new design will be made with Freecad 0.18 using the [assembly3](https://github.com/realthunder/FreeCAD_assembly3) module by [realthunder](https://github.com/realthunder).
+The scanhead is calibrated with a [ueye camera](https://en.ids-imaging.com/home.html) for which a stand was developed. A cheaper alternative might be to use chips provided by the Japanese [vision processing commnunity](https://www.visionproc.org/index.php) on for example a Raspberry Pi 3.
 
 
 
