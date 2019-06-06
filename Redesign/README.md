@@ -34,7 +34,7 @@ The laser diode housing is kept close the second cylindrical lens. The center of
 The distance from the second cylindrical lens to the edge of the base plate should be less than 25 mm. Otherwise, the focal point is reached before the edge of the base plate. The base plate should also have holes for mounting the spindle.
 
 ## Approach
-Design order prism motor standoff, laser housing base, first cylindrical lens, second cylindrical lens, right angle beam manipulator
+Design order; prism motor standoff, laser housing base, first cylindrical lens, second cylindrical lens, right angle beam manipulator
 and photodiode holder. Test accordingly.
 
 
