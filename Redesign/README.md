@@ -29,14 +29,18 @@ The combined focal length tolerance of the two lenses is roughly 3 mm. This is m
 The laser housing has one vertical degree of freedom. This is needed to ensure the laserdiode hits the center of the prism.
 The laser diode housing is kept close the second cylindrical lens. The center of the prism, polygon and laser housing are on a line. The laser is calibrated by four screws which form the basis of the laser housing, between the housing and the blase plate 
 a stiff spring is placed. Springs can be ordered at Alcomex or Tevema. The height is between 3 (back) and 5 mm (front). 
-The minimal spring force should be 20 N. A lock nut could be added.
+The spring selected is [C0180-024-0310M](https://www.asraymond.com/round-wire-compression-springs/C01800140750M).
+The load length is 7.8 mm and the free length is 19 mm and the spring constant is 0.2 N/m. 
 
 ### Base plate size
 The distance from the second cylindrical lens to the edge of the base plate should be less than 25 mm. Otherwise, the focal point is reached before the edge of the base plate. The base plate should also have holes for mounting the spindle.
 
 ## Approach
-Design order; prism motor standoff, laser housing base, first cylindrical lens, second cylindrical lens, right angle beam manipulator
-and photodiode holder. Test accordingly.
+Design order; prism motor standoff, laser housing base, first cylindrical lens, second cylindrical lens, right angle beam manipulator and photodiode holder. Test accordingly.
+
+
+## Spring suppliers
+In the Netherlands, one could consider [Alcomex](https://www.alcomex.com) and [Tevema](https://ww.tevema.com).
 
 
 
