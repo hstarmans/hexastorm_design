@@ -11,9 +11,9 @@ The prism motor is fixed in all dimensions with respect to the base plate.
 The offset of the prism motor with respect to the base plate is greater than the protrusion of the prism motor.
 
 ### Second Cylindrical lens
-The second cylindrical lens has a focal length of 25 mm.
+The second cylindrical lens has a focal length of 25 mm. The lens used is [#69-774](https://www.edmundoptics.com/p/125mm-h-x-25mm-l-x-25mm-fl-vis-nir-coated-cylinder-lens/24050/).
 The second cylindrical lens is placed as close as possible to the prism motor. The second cylindrical lens is parallel to the
-edge of the motor base. The line connecting the center of the cylindrical lens with the center of the polygon is orthogonal to edge of the motor base. The height of the base for the second cylindrical lens is such that the center of the lens aligns with the center of the prism motor.
+edge of the motor base. The line connecting the center of the cylindrical lens with the center of the polygon is orthogonal to edge of the motor base. The height of the base for the second cylindrical lens is such that the center of the lens aligns with the center of the prism motor. The lens is clamped into the holder and screwed into the base so it can be replaced.
 
 ### Right angle beam manipulator
 The beam must be manipulated to reach the photodiode. To ensure all aberations are included, the laser bundle is measured after refracting through the entire prism. The beam can be manipulated by using a prism or a mirror. In the Hexastorm POC of 2019-01, a right-angle prism is used. Due to cost reasons, it was decided to switch to a first surface mirror. The foot of the mirror is integrated with the foot of the second cylindrical lens. The dimensions of the mirror is such that it covers the entire height of the second cylindrical lens. The first surface mirror has dimensions 10x10x2 mm. The mirror will use up to 5 mm of the cylinder lens.
