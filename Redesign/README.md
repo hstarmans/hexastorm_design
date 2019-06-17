@@ -22,13 +22,15 @@ The beam must be manipulated to reach the photodiode. To ensure all aberations a
 The photodiode is placed directly after the mirror. The height of the photodiode can be adjusted so the bundle hits the photodiode at its center. The photodiode has a vertical translational degree of freedom of 5 mm. The photodiode is protected by a cap to minimize the influence of stray light. The cap can be removed so the laser can be aligned. The cap will be removable from the top.
 
 ### First Cylindrical lens
-The first cylindrical lens has a focal length of 75 mm. The focal length tolerance is 3 percent which is approximately 2 mm. 
+The first cylindrical lens has a focal length of 75 mm. The lens used is [68048](https://www.edmundoptics.com/p/125mm-h-x-25mm-l-x-75mm-fl-mgfsub2sub-coatedcylinder-lens/22744/).The focal length tolerance is 3 percent which is approximately 2 mm. 
 The combined focal length tolerance of the two lenses is roughly 3 mm. This is mitaged by giving one translational degree of freedom to the first cylindrical lens. The translational degree of freedom is established along the line connecting the center of the laser and the center of the polygon. As a result, during placement, the lens will also have one rotational degree of freedom with the rotanational axis perpendical to the base plane. This degree of freedom is used to correct for a possible horizontal misalignment of the laser with respect to the prism.
+The lens is clamped by a screw. The curved side faces the laser. This is optically better and allows the lens to be supported by a plane with the normal vector against gravity. The inserts used are Jeveka TAPPEX [M2x4](https://www.jeveka.com/nl/catalog/inserts-kato-spirol-ensat-tappex-magneten-magna/tappex-inserts-voor-kunststof/tappex-multisert-inserts-tapxmsm0/tapxmsm00020000/groups/g+c+a+nr+view). The base of the lens is not supported by a cross, as the lens is already clamped from the bottom.
+This also allows one not to use the support on the edges of the mirror.
+The support ridge for the mirror has been set at 1 mm. The edge width has been set at 2 mm; bringing total width to 12.5+2x2=16.5 mm. The height becomes 25+2x2=29 mm. The offset of the lens from the plane is set at 7.5 mm. The offset in the sketch is therefore 5.5 mm as 2 mm is accounted for by the edge. The fit of the lens has been extended by 300 micrometers for printer in
 
 ### Laser Housing
 The laser housing has one vertical degree of freedom. This is needed to ensure the laserdiode hits the center of the prism.
-The laser diode housing is kept close the second cylindrical lens. The center of the prism, polygon and laser housing are on a line. The laser is calibrated by four screws which form the basis of the laser housing, between the housing and the blase plate 
-a stiff spring is placed. Springs can be ordered at Alcomex or Tevema. The height is between 3 (back) and 5 mm (front). 
+The laser diode housing is kept close to the second cylindrical lens to minimize the footprint. The center of the prism, polygon and laser housing are on a line. The laser is calibrated by four screws which form the basis of the laser housing. Between the housing and the blase plate a stiff spring is placed. Springs can be ordered at Alcomex or Tevema. The height is between 3 (back) and 5 mm (front). 
 The spring selected is [C0180-024-0310M](https://www.asraymond.com/round-wire-compression-springs/C01800140750M).
 The load length is 7.8 mm and the free length is 19 mm and the spring constant is 0.2 N/m. 
 
