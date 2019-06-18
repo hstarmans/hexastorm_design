@@ -43,8 +43,9 @@ The load length is 7.8 mm and the free length is 19 mm and the spring constant i
 The distance from the second cylindrical lens to the edge of the base plate should be less than 25 mm. Otherwise, the focal point is reached before the edge of the base plate. The base plate should also have holes for mounting the spindle.
 
 ## TODO
-- try to reuse / salvage current parts
-- order mirror and missing parts
+- before end of line laser is turned on, you placed a 10 mm tape, best is to include it in design
+- use the silicon glue to fix the glasses and remove the screw system
+- order mirror or cut from existing sheet, no parts seem to be missing
 - adapt baseplate & finalise dimensions parts
 - select spring for photodiode
 
