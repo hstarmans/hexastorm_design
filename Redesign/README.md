@@ -43,7 +43,6 @@ The load length is 7.8 mm and the free length is 19 mm and the spring constant i
 The distance from the second cylindrical lens to the edge of the base plate should be less than 25 mm. Otherwise, the focal point is reached before the edge of the base plate. The base plate should also have holes for mounting the spindle.
 
 ## TODO
-- design photodiode holder
 - try to reuse / salvage current parts
 - order mirror and missing parts
 - finalise dimensions parts
