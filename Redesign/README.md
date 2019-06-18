@@ -23,6 +23,8 @@ The beam must be manipulated to reach the photodiode. To ensure all aberations a
 
 ### Photodiode
 The photodiode is placed directly after the mirror. The height of the photodiode can be adjusted so the bundle hits the photodiode at its center. The photodiode has a vertical translational degree of freedom of 5 mm. The photodiode is protected by a cap to minimize the influence of stray light. The cap can be removed so the laser can be aligned. The cap will be removable from the top.
+The photodiode used is [BPW34B](http://www.farnell.com/datasheets/2711552.pdf).
+
 
 ### First Cylindrical lens
 The first cylindrical lens has a focal length of 75 mm. The lens used is [68048](https://www.edmundoptics.com/p/125mm-h-x-25mm-l-x-75mm-fl-mgfsub2sub-coatedcylinder-lens/22744/).The focal length tolerance is 3 percent which is approximately 2 mm. 
