@@ -45,7 +45,7 @@ The distance from the second cylindrical lens to the edge of the base plate shou
 ## TODO
 - try to reuse / salvage current parts
 - order mirror and missing parts
-- finalise dimensions parts
+- adapt baseplate & finalise dimensions parts
 - select spring for photodiode
 
 ## Notes 
