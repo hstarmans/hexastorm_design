@@ -7,8 +7,7 @@ All constraints are determined with respect to the base plate. The plate is 2 mm
 i.e. height.
 
 ### Prism Motor
-The prism motor is fixed in all dimensions with respect to the base plate.
-The offset of the prism motor with respect to the base plate is greater than the protrusion of the prism motor.
+The prism motor is fixed in all dimensions with respect to the base plate. The offset of the prism motor with respect to the base plate is greater than the protrusion of the prism motor. The total offset is now 9 mm.
 
 ### Second Cylindrical lens
 The second cylindrical lens has a focal length of 25 mm. The lens used is [#69-774](https://www.edmundoptics.com/p/125mm-h-x-25mm-l-x-25mm-fl-vis-nir-coated-cylinder-lens/24050/).
@@ -33,8 +32,9 @@ The support ridge for the mirror has been set at 1 mm. The edge width has been s
 ### Laser Housing
 The laser housing has one vertical degree of freedom. This is needed to ensure the laserdiode hits the center of the prism.
 The laser diode housing is kept close to the second cylindrical lens to minimize the footprint. The center of the prism, polygon and laser housing are on a line. The laser is calibrated by four screws which form the basis of the laser housing. Between the housing and the blase plate a stiff spring is placed. Springs can be ordered at Alcomex or Tevema. The height is between 3 (back) and 5 mm (front). 
-The spring selected is [C0180-024-0310M](https://www.asraymond.com/round-wire-compression-springs/C01800140750M).
-The load length is 7.8 mm and the free length is 19 mm and the spring constant is 0.2 N/m. 
+The spring selected is [C0180-024-0310M](https://www.asraymond.com/catalog/C01800240310M).
+The documentd load length is 4.8 mm and the free length is 7.8 mm and the spring constant is 5 N/mm (32.6lb/in). 
+In practice, the length varies between 3.5 and 7.6 mm. The offset of the laser is placed at 5 mm, so 2 mm extra is needed in the prism motor offset.
 
 ### Base plate size
 The distance from the second cylindrical lens to the edge of the base plate should be less than 25 mm. Otherwise, the focal point is reached before the edge of the base plate. The base plate should also have holes for mounting the spindle.
