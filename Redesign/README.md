@@ -6,6 +6,10 @@ Via experiment it will be determined if alignment can be reached.
 All constraints are determined with respect to the base plate. The plate is 2 mm thick. The thickness is parallel to the z-axis,
 i.e. height.
 
+## Laser height
+The laser should be at a height of 13 mm (offset center prism / base polygon) + 16 mm (offset prism) is 29 mm.
+
+
 ### Prism Motor
 The prism motor is fixed in all dimensions with respect to the base plate. The offset of the prism motor with respect to the base plate is greater than the protrusion of the prism motor. The total offset is now 9 mm.
 
@@ -27,7 +31,7 @@ The photodiode used is [BPW34B](http://www.farnell.com/datasheets/2711552.pdf).
 The first cylindrical lens has a focal length of 75 mm. The lens used is [68048](https://www.edmundoptics.com/p/125mm-h-x-25mm-l-x-75mm-fl-mgfsub2sub-coatedcylinder-lens/22744/).The focal length tolerance is 3 percent which is approximately 2 mm. 
 The combined focal length tolerance of the two lenses is roughly 3 mm. This is mitaged by giving one translational degree of freedom to the first cylindrical lens. The translational degree of freedom is established along the line connecting the center of the laser and the center of the polygon. As a result, during placement, the lens will also have one rotational degree of freedom with the rotanational axis perpendical to the base plane. This degree of freedom is used to correct for a possible horizontal misalignment of the laser with respect to the prism.
 The lens is clamped CAF3 silicone glue. The lens can be detached after fixing, which simplified rapid prototyping. The curved side faces the laser. This is optically better and allows the lens to be supported by a plane with the normal vector against gravity. The insert used is Jeveka TAPPEX [M2x4](https://www.jeveka.com/nl/catalog/inserts-kato-spirol-ensat-tappex-magneten-magna/tappex-inserts-voor-kunststof/tappex-multisert-inserts-tapxmsm0/tapxmsm00020000/groups/g+c+a+nr+view). The base of the lens is not supported by a cross, as the lens is already clamped from the bottom.
-The support ridge for the mirror has been set at 1 mm. The edge width has been set at 2 mm; bringing total width to 12.5+2x2=16.5 mm. The height becomes 25+2x2=29 mm. The offset of the lens from the plane is set at 7.5 mm. The offset in the sketch is therefore 5.5 mm as 2 mm is accounted for by the edge. The fit of the lens has been extended by 300 micrometers for printer inaccuracies, i.e a extra cut of 300 micron all directions has been made. The center thickness is 2 mm. The groove for the lens has been made 2 mm. The whole lens is 4  mm thick. The base and the top have been extended at places where a insert needed to pressed.
+The support ridge for the mirror has been set at 1 mm. The edge width has been set at 2 mm; bringing total width to 12.5+2x2=16.5 mm. The height becomes 25+2x2=29 mm. The offset of the lens from the plane is set at 7.5 mm. The offset in the sketch is therefore 5.5 mm as 2 mm is accounted for by the edge. The fit of the lens has been extended by 300 micrometers for printer inaccuracies, i.e a extra cut of 300 micron all directions has been made. The center thickness is 2 mm. The groove for the lens has been made 2 mm. The whole lens is 4  mm thick. The base and the top have been extended at places where a insert needed to pressed. The offset of the screw with the center of the lens is 2.5 + 8.25 = 10.5 mm.
 
 ### Laser Housing
 The laser housing has one vertical degree of freedom. This is needed to ensure the laserdiode hits the center of the prism.
