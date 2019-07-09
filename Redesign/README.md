@@ -44,6 +44,12 @@ M3x5 press inserts are used to get the laser at a fixed height.
 ### Base plate size
 The distance from the second cylindrical lens to the edge of the base plate should be less than 25 mm. Otherwise, the focal point is reached before the edge of the base plate. The base plate should also have holes for mounting the spindle.
 
+### ATX
+Mounted to optical plate with 25 mm pitch and M6 holes. Screw used to mount holders to ATX is M3x5.
+
+### Beaglebone fixture
+Used to mount Beaglebone to optical plate with 25 mm pitch and M6 holes.
+
 ## TODO
 - before end of line laser is turned on, you placed a 10 mm tape, best is to include it in design
 - use the silicon glue to fix the glasses and remove the screw system
