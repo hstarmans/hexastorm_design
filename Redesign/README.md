@@ -50,6 +50,12 @@ Mounted to optical plate with 25 mm pitch and M6 holes. Screw used to mount hold
 ### Beaglebone fixture
 Used to mount Beaglebone to optical plate with 25 mm pitch and M6 holes.
 
+### Optical plate
+Thorlabs MB3045/M, aluminum breadboard, 300 mm x 450 mm x 12.7 mm with M6 taps.
+4x M6x25 screws to fix scanhead to optical plate
+3x M6x12 screws to fix atx to optical plate
+2x M6x12 screws to fix beaglebone to optical plate
+
 ## TODO
 - before end of line laser is turned on, you placed a 10 mm tape, best is to include it in design
 - use the silicon glue to fix the glasses and remove the screw system
