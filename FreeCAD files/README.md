@@ -1,3 +1,9 @@
+The bill of materials and more details can be found on [Hackaday](https://hackaday.io/project/21933-open-hardware-fast-high-resolution-laser).
+
+If you print all the components, you should be able to build something like shown below;
+<img src="https://cdn.hackaday.io/images/7106161566426847098.jpg" align="center" height="300"/>
+
+
 ### Laser height
 The laser should be at a height of 29 mm.
 
