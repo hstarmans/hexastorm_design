@@ -7,7 +7,7 @@ Most of the components can be laser cut to facilitate mass production.
 Non-flat components should be printed on a fused filament fabrication printer.
 
 # Notes
-FreeCAD files contains the designs
+FreeCAD files folder contains the designs
 
 Deprecated folder contains the old design files of the Hexastorm. These are no longer in use
 
