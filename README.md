@@ -1,4 +1,6 @@
-# Design Open hardware fast high resolution laser
+# Design 
+
+This folder contains the computer animated design files to build an [open hardware fast high resolution laser.](https://reprap.org/wiki/Open_hardware_fast_high_resolution_LASER)
 
 The laser module is designed in FreeCAD so it can be edited by anyone.
 Most of the components can be laser cut to facilitate mass production.
