@@ -53,7 +53,7 @@ M3           washer                                                 4 units
 ```
 [C0240-024-0810S](https://www.assocspring.co.uk/round-wire/C0240-024-0810-S) (spring)
 ```
-spring  6 units (2 photodiode, 4 laser unit)
+spring       (2 photodiode, 4 laser unit)                           6 units
 M2x6         screw photodiode pcb holder                            3 units
 M2           nut                                                    3 units
 M2x20        screw photodiode pcb holder in spring                  2 units
