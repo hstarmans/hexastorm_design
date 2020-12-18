@@ -1,10 +1,9 @@
 # Design 
 
-This folder contains the computer animated design files to build an [open hardware fast high resolution laser.](https://reprap.org/wiki/Open_hardware_fast_high_resolution_LASER)
-
+This folder contains the Computer Animated Design (CAD) files to build an [open hardware fast high resolution laser.](https://reprap.org/wiki/Open_hardware_fast_high_resolution_LASER)
 The laser module is designed in FreeCAD so it can be edited by anyone.
 Most of the components can be laser cut to facilitate mass production.
-Non-flat components should be printed on a fused filament fabrication printer.
+Non-flat components are intended be printed on a fused filament fabrication printer.
 
 # Notes
 FreeCAD files folder contains the designs
