@@ -4,6 +4,9 @@ If you print all the components, you should be able to build something like show
 <img src="https://cdn.hackaday.io/images/7106161566426847098.jpg" align="center" height="300"/>
 
 
+### Notes on using LCINterlock
+LCinterlock does not account for the orientation of the [document](https://github.com/execuc/LCInterlocking/pull/34). Therefore objects are cloned and the cloned objects are used to make the box. Futhermore, it is not possible so set a margin for the nut [width](https://github.com/execuc/LCInterlocking/issues/46). This is fixed by adjusting the code of the core module.
+
 ### Laser height
 The laser should be at a height of 29 mm.
 
