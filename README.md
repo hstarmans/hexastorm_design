@@ -6,7 +6,7 @@ Most of the components can be laser cut to facilitate mass production.
 Non-flat components are intended be printed on a fused filament fabrication printer.
 
 The main file of interest is fullassembly.FCStd. <br>
-![](./Images/design.png)
+![](./Images/design.PNG)
 
 # Notes
 FreeCAD files folder contains the designs. Freecad 0.19 with assembly 4 and Kicad Stepup is used.
