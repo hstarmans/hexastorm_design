@@ -5,6 +5,9 @@ The laser module is designed in FreeCAD so it can be edited by anyone.
 Most of the components can be laser cut to facilitate mass production.
 Non-flat components are intended be printed on a fused filament fabrication printer.
 
+The main file of interest is fullassembly.FCStd. <br>
+![](./Images/design.png)
+
 # Notes
 FreeCAD files folder contains the designs
 
