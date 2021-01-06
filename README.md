@@ -9,6 +9,7 @@ The main file of interest is fullassembly.FCStd. <br>
 ![](./Images/design.PNG)
 
 # Notes
+a
 FreeCAD files folder contains the designs. Freecad 0.19 with assembly 4 and Kicad Stepup is used.
 
 Deprecated folder contains the old design files of the Hexastorm. These are no longer in use
