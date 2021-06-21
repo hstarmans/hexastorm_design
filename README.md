@@ -14,10 +14,10 @@ The main file of interest is fullassembly.FCStd. <br>
 ## Render 
 To create a render of the laser rays, additional code is needed.
 
-Freecad workbench
-https://github.com/hstarmans/freecad_hexastorm
-Python library with prism simulation
-https://github.com/hstarmans/opticaldesign
+Freecad workbench  
+https://github.com/hstarmans/freecad_hexastorm  
+Python library with prism simulation  
+https://github.com/hstarmans/opticaldesign  
 
 ## File structure
 FreeCAD files folder contains the designs. Freecad 0.19 with assembly 4 and Kicad Stepup is used.
