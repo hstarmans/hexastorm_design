@@ -11,10 +11,10 @@ The main file of interest is fullassembly.FCStd. <br>
 # Notes
 
 ## Instruction Videos
-Assembly 4 Design, without optical simulation
-https://youtu.be/jhr6iEazbQk
-Assembly 4 design, with optical simulation
-https://youtu.be/kekMkjqzRjE
+Assembly 4 Design, without optical simulation  
+https://youtu.be/jhr6iEazbQk  
+Assembly 4 design, with optical simulation  
+https://youtu.be/kekMkjqzRjE  
 
 ## Render 
 To create a render of the laser rays, additional code is needed.
