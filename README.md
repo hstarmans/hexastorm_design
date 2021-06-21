@@ -9,13 +9,22 @@ The main file of interest is fullassembly.FCStd. <br>
 ![](./Images/design.PNG)
 
 # Notes
-a
+
+
+## Render 
+To create a render of the laser rays, additional code is needed.
+
+Freecad workbench
+https://github.com/hstarmans/freecad_hexastorm
+Python library with prism simulation
+https://github.com/hstarmans/opticaldesign
+
+## File structure
 FreeCAD files folder contains the designs. Freecad 0.19 with assembly 4 and Kicad Stepup is used.
-
 Deprecated folder contains the old design files of the Hexastorm. These are no longer in use
-
-The laser can be aligned but the laser mount has four screws with springs. This is too much.
-Three spots can be seen. A spot created by refraction through the prism. A spot by going partly over the prism. A spot by reflection on the copper reference substrate of the prism.
+The laser can be aligned but the laser mount has four screws with springs. This is too much.  
+Three spots can be seen. A spot created by refraction through the prism. A spot by going partly over the prism.
+A spot by reflection on the copper reference substrate of the prism.  
 By changing the height and angle of the laser a user can alter the balance between these spots.
 
 
