@@ -34,6 +34,7 @@ A spot by reflection on the copper reference substrate of the prism.
 By changing the height and angle of the laser a user can alter the balance between these spots.
 
 ## BOM
+POM plate kunstofshop.nl, acrylic is not durable enough
 
 M2x6  2 (photodiode pcb fixture)
 M2x6  1 (cylinder lens 1)
