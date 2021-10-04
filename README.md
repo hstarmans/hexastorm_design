@@ -57,3 +57,8 @@ M3x16 4 (polygon motor fixture)
 M3x16 2 (laserdiode fixture)
 
 total M3x16 6
+
+# Notes
+
+## Laser cutter
+In draft workbench, click shape 2D, set line colour to red and export.
