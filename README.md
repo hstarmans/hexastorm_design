@@ -1,14 +1,17 @@
 # Design 
 
-This folder contains the Computer Animated Design (CAD) files to build an [open hardware fast high resolution laser.](https://reprap.org/wiki/Open_hardware_fast_high_resolution_LASER)
-The laser module is designed in FreeCAD so it can be edited by anyone.
-Most of the components can be laser cut to facilitate mass production.
-Non-flat components are intended be printed on a fused filament fabrication printer.
+This folder contains the Computer Animated Design (CAD) files to build an [open hardware fast high resolution laser.](https://reprap.org/wiki/Open_hardware_fast_high_resolution_LASER)  
+The laser module is designed in FreeCAD so it can be edited by anyone.  
+Most of the components can be laser cut to facilitate mass production. I now convert them to PCBs via Kicad Step up and Kicad.
+They can be found in https://github.com/hstarmans/firestarter.  
+Non-flat components are printed on a fused filament fabrication printer. All components can be printed within 25 minutes.
 
-The main file of interest is fullassembly.FCStd. <br>
+The main file of interest is fullassembly.FCStd.  
 ![](./Images/design.PNG)
 
 # Notes
+
+The assembly is parameterized
 
 ## Instruction Videos
 Assembly 4 Design, without optical simulation  
@@ -34,8 +37,6 @@ A spot by reflection on the copper reference substrate of the prism.
 By changing the height and angle of the laser a user can alter the balance between these spots.
 
 ## BOM
-POM plate kunstofshop.nl, acrylic is not durable enough
-
 M2x6  2 (photodiode pcb fixture)
 M2x6  1 (cylinder lens 1)
 M2x6  2 (cylinder lens 2)
@@ -58,7 +59,13 @@ M3x16 2 (laserdiode fixture)
 
 total M3x16 6
 
-# Notes
+## Known bugs
+
+ - FreeCAD complains about migration issues, this can be ignored.
+ - If the baseplate is changed, screws and local coordinate frames need to be reassigned which is cumbersome
 
 ## Laser cutter
 In draft workbench, click shape 2D, set line colour to red and export.
+I bought my plates at kunstofshop.nl.
+Acrylic is very flat but brittle and breaks easily.
+A POM plate is more durable but can warp from and heat and be set when laser cutting.
