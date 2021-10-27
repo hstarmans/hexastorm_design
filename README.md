@@ -7,7 +7,7 @@ They can be found in https://github.com/hstarmans/firestarter.
 Non-flat components are printed on a fused filament fabrication printer. All components can be printed within 25 minutes.
 
 The main file of interest is fullassembly.FCStd.  
-![](./Images/design.PNG)
+![](./Images/freecadpic.jpg)
 
 # Notes
 
