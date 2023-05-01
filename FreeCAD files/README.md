@@ -4,63 +4,19 @@ If you print all the components, you should be able to build something like show
 ![](https://cdn.hackaday.io/images/7106161566426847098.jpg)
 <br>
 
-## Notes 
-The following are some old notes with respect to the assembly.
+## Technical Note
+A laser bundle which is refracted by a prism follows three paths. 
+A spot created by refraction through the prism. A spot by going partly over the prism.
+A spot by reflection on the copper reference substrate of the prism.  
+By changing the height and angle of the laser a user can alter the balance between these spots.
+To filter out the reflection a slit is added in the front plate.
 
-### Felix_mount
-Used to mount the laser module to the Felix printers frame. 
-### Beaglebone fixture
-Used to mount Beaglebone to optical plate with 25 mm pitch and M6 holes.
-### Notes on using LCINterlock
-LCinterlock does not account for the orientation of the [document](https://github.com/execuc/LCInterlocking/pull/34). Therefore objects are cloned and the cloned objects are used to make the box. Futhermore, it is not possible so set a margin for the nut [width](https://github.com/execuc/LCInterlocking/issues/46). This is fixed by adjusting the code of the core module.
-Due the issues LC interlock is no longer used.
-
-### Laser height
-The laser should be at a height of 29 mm.
+### First Cylindrical lens
+The first cylindrical lens has a focal length of 75 mm. The lens used is [#48-355](https://www.edmundoptics.com/p/125mm-dia-x-75mm-fl-mgfsub2sub-coated-cylinder-lens/8603/). 
 
 ### Second Cylindrical lens
 The second cylindrical lens has a focal length of 25 mm. The lens used is [#48-353](https://www.edmundoptics.com/p/125mm-dia-x-25mm-fl-mgfsub2sub-coated-cylinder-lens/8601/).
 The mirror used is 10x10x2 mm, e.g. [#45-517](https://www.edmundoptics.com/p/10-x-10mm-enhanced-aluminum-4-6lambda-mirror/6013/).
 
-### First Cylindrical lens
-The first cylindrical lens has a focal length of 75 mm. The lens used is [#48-355](https://www.edmundoptics.com/p/125mm-dia-x-75mm-fl-mgfsub2sub-coated-cylinder-lens/8603/). 
-
-### ATX (power supply)
-Mounted to optical plate with 25 mm pitch and M6 holes. Screw used to mount holders to ATX is M3x5.
-
-### Spring suppliers
-In the Netherlands, one could consider [Alcomex](https://www.alcomex.com) and [Tevema](https://ww.tevema.com).
-Use the silicon glue to fix the glasses (CAF3).
-### Laser Housing
-The spring selected is [C0180-024-0310M](https://www.asraymond.com/catalog/C01800240310M).
-The documented load length is 4.8 mm and the free length is 7.8 mm and the spring constant is 5 N/mm (32.6lb/in). 
-
 ### Optical plate
 Thorlabs MB3045/M, aluminum breadboard, 300 mm x 450 mm x 12.7 mm with M6 taps.
-4x M6x25 screws to fix scanhead to optical plate
-3x M6x12 screws to fix atx to optical plate
-2x M6x12 screws to fix beaglebone to optical plate
-
-### BOM List
-The insert used is Jeveka TAPPEX [M2x3.2](https://www.jeveka.com/nl/catalog/inserts-kato-spirol-ensat-tappex-magneten-magna/tappex-inserts-voor-kunststof/tappex-multisert-inserts-tapxmsm0/tapxmsm00020000/groups/g+c+a+nr+view).
-```
-M2x3.2       messing insert(4 base, 2 laser, 2 photodiode)          8 pieces 
-M2x5         screw laser holder                                     2 units
-M2x8         screw holder for PCB                                   2 units
-M2           nut                                                    2 units
-M2x2         pvc distance bus                                       2 units
-M3x22        screw polygon holder                                   4 units (now you use M3x25)
-M3           nut                                                    4 units
-M3           washer                                                 4 units
-```
-[C0240-024-0810S](https://www.assocspring.co.uk/round-wire/C0240-024-0810-S) (spring)
-```
-spring       (2 photodiode, 4 laser unit)                           6 units
-M2x6         screw photodiode pcb holder                            3 units
-M2           nut                                                    3 units
-M2x20        screw photodiode pcb holder in spring                  2 units
-M2x8         screw holder second lens                               1 units
-M2           washer                                                 1 units
-M3x14        screw holds box                                        8 units (now you use M3x16)
-M3           nut holds box                                          8 units 
-```
