@@ -4,6 +4,8 @@ The CAD file is created out of six PCBs, these can be found in https://github.co
 The design is made using Freecad 0.20 and plugins assembly 4 and Kicad Stepup.  
 The main file of interest is assembly_compact.FCStd, in FreeCAD Files.    
 Earlier design are available in the branch named old.
+The main board is placed in this box 100x67x22mm, AK-NW-84. This box can be found on Aliexpress.
+
 ![](./Images/freecadpic.jpg)
 
 ## Status
