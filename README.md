@@ -7,7 +7,7 @@ The main file of interest is assembly_compact_new.FCStd, in FreeCAD Files.
 <img src="./Images/freecadpic.jpg" align="center" width=70% height=70%>
 
 ## Status
-Current design will be tested in december 2024 and is intended to be available commercially.
+Design has been tested and is functional.
 
 ## Instruction Videos
 There are some videos on YouTube explaining the design in more details.
