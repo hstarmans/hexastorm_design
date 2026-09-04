@@ -1,5 +1,15 @@
+# CAD exports
 *.stl
 *.svg
-*.FCStd1
 *.step
+*.stp
+
+# FreeCAD backups, numbered revisions, and recovery files
 *.FCBak
+*.FCStd[0-9]*
+*.FCStd.*
+*.FCStd.lock
+*~
+
+# Notes
+todo.md
