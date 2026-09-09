@@ -4,8 +4,7 @@ Hexastorm is an open-hardware high-resolution laser direct imager (LDI) and poly
 
 * **Technical Specification & Design Theory**: [Open hardware fast high resolution laser (RepRap Wiki)](https://reprap.org/wiki/Open_hardware_fast_high_resolution_LASER)
 * **Control Electronics & Driver PCBs**: [firestarter (GitHub)](https://github.com/hstarmans/firestarter)
-* **FreeCAD Workbench**: [freecad_hexastorm (GitHub)](https://github.com/hstarmans/freecad_hexastorm)
-* **Optical Simulation Engine**: [opticaldesign (GitHub)](https://github.com/hstarmans/opticaldesign)
+* **Optical Simulation & CAD Verification**: [opticaldesign (GitHub)](https://github.com/hstarmans/opticaldesign)
 
 <p align="center">
   <img src="./Images/freecadpic.jpg" width="80%" alt="Hexastorm FreeCAD Assembly">
@@ -78,9 +77,14 @@ uv add <package>
 ---
 
 ## Optical Simulation & Ray Tracing
-Creating and tracing rays in FreeCAD is accomplished with `pyoptools` and the following libraries:
-* **FreeCAD Workbench**: [freecad_hexastorm](https://github.com/hstarmans/freecad_hexastorm)
-* **Prism & Polygon Simulation Library**: [opticaldesign](https://github.com/hstarmans/opticaldesign)
+Optical simulation, tolerance verification, and 3D ray tracing are powered by [opticaldesign](https://github.com/hstarmans/opticaldesign) (using `pyoptools` and `prisms.cad_verifier`).
+
+With FreeCAD open, optical verification and 3D ray tracing can be executed directly via:
+```bash
+cd path/to/opticaldesign
+uv run python -m prisms.cad_verifier
+```
+This automatically inspects component alignment, validates confocal focal planes, checks photodiode synchronization angles, and pushes colored 3D rays directly into the CAD model's `Simulation/Rays` group.
 
 ---
 

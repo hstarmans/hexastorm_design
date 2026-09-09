@@ -22,6 +22,5 @@ Assist with the CAD modeling, assembly, and optical/mechanical design of **Hexas
    - **Related Repositories & References**:
      - Open Hardware Wiki: [Open hardware fast high resolution laser](https://reprap.org/wiki/Open_hardware_fast_high_resolution_LASER)
      - PCB Electronics: [firestarter](https://github.com/hstarmans/firestarter)
-     - FreeCAD Workbench: [freecad_hexastorm](https://github.com/hstarmans/freecad_hexastorm)
-     - Optical Simulation: [opticaldesign](https://github.com/hstarmans/opticaldesign)
+     - Optical Simulation & CAD Verification: [opticaldesign](https://github.com/hstarmans/opticaldesign)
 
