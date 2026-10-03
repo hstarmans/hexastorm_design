@@ -1,29 +1,47 @@
-# Hexastorm: Open-Hardware High-Resolution Laser Scanner
+# Hexastorm: Laser Scanner CAD
 
-Hexastorm is an open-hardware high-resolution laser direct imager (LDI) and polygon laser scanner. It enables ultra-fast, high-precision scanning for direct laser lithography, PCB exposure, and precision optical inspection.
+FreeCAD design files for **Hexastorm**, an open-hardware polygon laser direct imager (LDI) for PCB lithography and laser scanning.
 
-* **Technical Specification & Design Theory**: [Open hardware fast high resolution laser (RepRap Wiki)](https://reprap.org/wiki/Open_hardware_fast_high_resolution_LASER)
-* **Control Electronics & Driver PCBs**: [firestarter (GitHub)](https://github.com/hstarmans/firestarter)
-* **Optical Simulation & CAD Verification**: [opticaldesign (GitHub)](https://github.com/hstarmans/opticaldesign)
+* **Documentation & Theory**: [Open hardware fast high resolution laser (RepRap Wiki)](https://reprap.org/wiki/Open_hardware_fast_high_resolution_LASER)
+* **Electronics & Firmware**: [firestarter (GitHub)](https://github.com/hstarmans/firestarter)
+* **Optical Simulation**: [opticaldesign (GitHub)](https://github.com/hstarmans/opticaldesign)
 
 <p align="center">
-  <img src="./Images/freecadpic.jpg" width="80%" alt="Hexastorm FreeCAD Assembly">
+  <img src="./Images/freecadpic_base.png" width="48%" alt="Hexastorm Base Configuration (without cylinder lenses)">
+  <img src="./Images/freecadpic.png" width="48%" alt="Hexastorm with Cylinder Lenses">
+  <br>
+  <em>Left: Base configuration (no cylinder lenses). Right: Configuration with CL1 saddle bridge and CL2 lens.</em>
 </p>
 
 ---
 
-## Key Architecture & Features
+## Design Overview
 
-* **High-Speed Rotating Polygon Prism**:
-  * Precision multifaceted prism mirror driven by a compact integrated PCB motor (`mirrormotor.FCStd`).
-* **Anamorphic Beam Conditioning Optics**:
-  * Laser diode collimator mount with fine focus.
-  * Astigmatic correction / wobble-compensating sagittal cylinder lens (CL1).
-  * Field-flattening cylinder lens 2 (CL2).
-* **Maxwell Kinematic Coupling (Detachable Toolhead)**:
-  * A true 6-DOF athermal kinematic dock using 3 radial V-grooves on the scanhead PCB mating with 3 captive Ø 8.0 mm chrome steel spheres on the receiver dock.
-  * 3 pairs of N52 neodymium magnets (Ø 8.0 mm × 1.0 mm) providing ~17 N of clamping force with a 0.40 mm non-contact air gap.
-  * Universal 4x M2 bolt pattern (40.0 mm × 36.0 mm) allowing easy mounting to 3D-printed machine adapters (CNC 3018 Pro, Voron, 2020 extrusion, or spindle clamps).
+* **Optical Configurations (Base vs. Cylinder Lens Upgrade)**:
+  * **Base (no cylinder lenses)**: Collimated beam goes directly from the laser diode to the polygon prism. Lower component count, but results in an elliptical beam spot.
+  * **With Cylinder Lenses**: Adding CL1 (mounted in saddle bridge `sk_bridge_pcb`) and CL2 circularizes the beam spot and optically cancels facet tilt errors from the rotating prism.
+  * The chassis has slots for the saddle bridge, so cylinder lenses can be added or omitted without altering the other panels.
+* **Laser Diode Mount**: Adjustment ring with 36 straight knurls for diode Z-focus.
+* **Prism Drive & Motor Support**:
+  * Rotating polygon prism mounted to a rotor with custom magnet holder.
+  * Supports an experimental planar PCB motor (`mirrormotor.FCStd` / `pcbmotorasm`) with stator coils etched into PCB copper (driven by [firestarter](https://github.com/hstarmans/firestarter)), or standard motor mounts.
+
+<p align="center">
+  <img src="./Images/pcb_motor_view.png" width="75%" alt="Hexastorm Planar PCB Motor and Internal Layout">
+</p>
+
+* **Chassis**: Tab-and-slot FR4 PCB panels soldered at the seams.
+* **Maxwell Kinematic Dock**:
+  * Toolhead mount using 3 radial V-grooves on the scanhead PCB mating with 3 captive Ø 8.0 mm steel bearing balls on the dock base.
+  * Clamped by 3 pairs of Ø 8.0 mm × 1.0 mm N52 magnets (~17 N pull, 0.40 mm magnet air gap).
+  * PCB separation is 2.40 mm when docked.
+  * Mates with [maxwell_dock.kicad_pcb](file:///home/hexastorm/Documents/hardware/firestarter/lasermodule/maxwell_dock/maxwell_dock/maxwell_dock.kicad_pcb). Mounting to a CNC 3018 or extrusion frame requires an adapter plate; it is not a drop-in fit for Voron toolheads.
+
+<p align="center">
+  <img src="./Images/kinematic_dock_view.png" width="75%" alt="Hexastorm Maxwell Kinematic Dock Interface">
+</p>
+
+* **KiCad Integration**: Board outlines and aperture cutouts in FreeCAD sync directly to KiCad `Edge.Cuts` via KiCad StepUp.
 
 ---
 
@@ -31,43 +49,46 @@ Hexastorm is an open-hardware high-resolution laser direct imager (LDI) and poly
 
 ```text
 ├── FreeCAD files/
-│   ├── assembly_compact_new.FCStd   # Master optomechanical assembly
+│   ├── assembly_compact_new.FCStd   # Main assembly (FreeCAD 1.0)
 │   ├── mirrormotor.FCStd            # Polygon prism and PCB motor assembly
-│   └── ArducamUC621/                # Camera calibration & beam profiling fixtures
+│   └── ArducamUC621/                # Calibration & profiling fixtures
 ├── Images/
-│   └── freecadpic.jpg               # CAD overview render
-├── pyproject.toml                   # Python environment dependencies (managed via uv)
+│   ├── freecadpic_base.png          # Base configuration (no cylinder lenses)
+│   ├── freecadpic.png               # Configuration with cylinder lenses
+│   ├── pcb_motor_view.png           # Internal layout with planar PCB motor and rotor
+│   └── kinematic_dock_view.png      # Kinematic dock underside view
+├── pyproject.toml                   # Python dependencies (managed via uv)
 ├── AGENTS.md                        # CAD assistant & pair-programming guidelines
 └── README.md
 ```
 
 ---
 
-## CAD Environment & Requirements
+## CAD Environment
 
-### 1. Git LFS Requirement
-This repository stores `.FCStd` CAD files and images using **Git Large File Storage (Git LFS)**. Ensure Git LFS is installed before cloning:
+### 1. Git LFS
+This repository stores `.FCStd` files and images in Git LFS. Run before cloning:
 
 ```bash
 git lfs install
 git clone https://github.com/hstarmans/hexastorm_design.git
 ```
 
-*(If you already cloned without LFS, run `git lfs pull` inside the repository).*
+*(If cloned without LFS, run `git lfs pull` inside the repository).*
 
-### 2. FreeCAD Version & Workbenches
-* **FreeCAD**: Version 1.0 or higher.
-* **Workbenches / Addons**:
-  * **Assembly** (FreeCAD 1.0 built-in)
-  * **PartDesign**
-  * **Fasteners Workbench**
-  * **KiCad StepUp** (for PCB 3D integration)
+### 2. FreeCAD Requirements
+* **FreeCAD**: 1.0 or higher.
+* **Workbenches**:
+  * Assembly (built-in FreeCAD 1.0)
+  * PartDesign
+  * Fasteners Workbench
+  * KiCad StepUp
 
 ### 3. Python Environment
-Python tools and dependencies are managed using [`uv`](https://docs.astral.sh/uv/):
+Python tools and dependencies are managed with [`uv`](https://docs.astral.sh/uv/):
 
 ```bash
-# Run any script with uv
+# Run scripts with uv
 uv run python <script.py>
 
 # Add dependencies
@@ -77,17 +98,18 @@ uv add <package>
 ---
 
 ## Optical Simulation & Ray Tracing
-Optical simulation, tolerance verification, and 3D ray tracing are powered by [opticaldesign](https://github.com/hstarmans/opticaldesign) (using `pyoptools` and `prisms.cad_verifier`).
+Ray tracing and optical verification are handled by [opticaldesign](https://github.com/hstarmans/opticaldesign) (`pyoptools` and `prisms.cad_verifier`).
 
-With FreeCAD open, optical verification and 3D ray tracing can be executed directly via:
+Run with FreeCAD open:
 ```bash
 cd path/to/opticaldesign
 uv run python -m prisms.cad_verifier
 ```
-This automatically inspects component alignment, validates confocal focal planes, checks photodiode synchronization angles, and pushes colored 3D rays directly into the CAD model's `Simulation/Rays` group.
+This traces rays through the diode, lenses, polygon facets, and mirror, and writes rays into FreeCAD under `Simulation/Rays`.
 
 ---
 
 ## Reference Videos
 * [Assembly 4 Design Overview (Legacy)](https://youtu.be/jhr6iEazbQk)
 * [Optical Simulation Walkthrough](https://youtu.be/kekMkjqzRjE)
+
