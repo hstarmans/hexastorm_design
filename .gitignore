@@ -13,3 +13,9 @@
 
 # Notes
 todo.md
+
+# Python artifacts (CAD repository)
+.venv/
+__pycache__/
+*.lock
+.python-version

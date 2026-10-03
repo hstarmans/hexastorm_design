@@ -1,9 +1,0 @@
-[project]
-name = "hexastorm-design"
-version = "0.1.0"
-description = "Hexastorm laser direct imager FreeCAD design and optomechanical modeling"
-readme = "README.md"
-requires-python = ">=3.12"
-dependencies = [
-    "freecad-mcp>=0.1.22",
-]

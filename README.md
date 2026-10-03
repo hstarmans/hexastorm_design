@@ -57,7 +57,6 @@ FreeCAD design files for **Hexastorm**, an open-hardware polygon laser direct im
 │   ├── freecadpic.png               # Configuration with cylinder lenses
 │   ├── pcb_motor_view.png           # Internal layout with planar PCB motor and rotor
 │   └── kinematic_dock_view.png      # Kinematic dock underside view
-├── pyproject.toml                   # Python dependencies (managed via uv)
 ├── AGENTS.md                        # CAD assistant & pair-programming guidelines
 └── README.md
 ```
@@ -83,17 +82,6 @@ git clone https://github.com/hstarmans/hexastorm_design.git
   * PartDesign
   * Fasteners Workbench
   * KiCad StepUp
-
-### 3. Python Environment
-Python tools and dependencies are managed with [`uv`](https://docs.astral.sh/uv/):
-
-```bash
-# Run scripts with uv
-uv run python <script.py>
-
-# Add dependencies
-uv add <package>
-```
 
 ---
 

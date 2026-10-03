@@ -16,9 +16,10 @@ Assist with the CAD modeling, assembly, and optical/mechanical design of **Hexas
 3. **Domain Context**:
    - **Mechanism**: High-speed optical scanning with a rotating polygon/prism mirror and compact optomechanics.
    - **Environment**: FreeCAD (v1.0+) with workbenches/plugins including Assembly4, PartDesign, Fasteners, KiCad StepUp, and pyoptools for optical simulation.
-   - **Tooling & Python Execution**:
-     - Always use `uv` for running scripts and managing Python dependencies (e.g., `uv run python <script.py>`, `uv add <package>`).
-     - Never invoke bare `python` or `pip` without `uv`.
+   - **Tooling & Environment**:
+     - This repository is dedicated exclusively to FreeCAD CAD modeling and mechanical assets; do not create Python packages, venvs, or lockfiles here.
+     - The FreeCAD MCP server runs standalone via `uvx freecad-mcp`.
+     - Optical simulation, ray tracing, and Python tooling are maintained and run via `uv` in `opticaldesign`.
    - **Related Repositories & References**:
      - Open Hardware Wiki: [Open hardware fast high resolution laser](https://reprap.org/wiki/Open_hardware_fast_high_resolution_LASER)
      - PCB Electronics: [firestarter](https://github.com/hstarmans/firestarter)
