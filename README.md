@@ -18,13 +18,13 @@ FreeCAD design files for **Hexastorm**, an open-hardware polygon laser direct im
 ## Design Overview
 
 * **Optical Configurations (Base vs. Cylinder Lens Upgrade)**:
-  * **Base (no cylinder lenses)**: Collimated beam goes directly from the laser diode to the polygon prism. Lower component count, but results in an elliptical beam spot.
-  * **With Cylinder Lenses**: Adding CL1 (mounted in saddle bridge `sk_bridge_pcb`) and CL2 circularizes the beam spot and optically cancels facet tilt errors from the rotating prism.
-  * The chassis has slots for the saddle bridge, so cylinder lenses can be added or omitted without altering the other panels.
-* **Laser Diode Mount**: Adjustment ring with 36 straight knurls for diode Z-focus.
+
+  * **Base (no cylinder lenses)**: Focussed beam goes directly from the laser diode through the polygon prism into a small spot. Lower component count, but results in an elliptical beam spot.
+  * **With Cylinder Lenses**: Adding CL1 (mounted in saddle bridge `sk_bridge_pcb`) and CL2 circularizes the beam spot and optically cancels facet tilt errors from the rotating prism. The beam is collimated when it leaves the laserdiode.
 * **Prism Drive & Motor Support**:
-  * Rotating polygon prism mounted to a rotor with custom magnet holder.
-  * Supports an experimental planar PCB motor (`mirrormotor.FCStd` / `pcbmotorasm`) with stator coils etched into PCB copper (driven by [firestarter](https://github.com/hstarmans/firestarter)), or standard motor mounts.
+
+  * Typically, a refurbished sharp AR160 polygon mirror motor is used.
+  * However, a  PCB motor (`mirrormotor.FCStd` / `pcbmotorasm`) with stator coils etched into PCB copper (driven by [firestarter](https://github.com/hstarmans/firestarter)) can also be used for laser scanning.
 
 <p align="center">
   <img src="./Images/pcb_motor_view.png" width="75%" alt="Hexastorm Planar PCB Motor and Internal Layout">
@@ -35,7 +35,7 @@ FreeCAD design files for **Hexastorm**, an open-hardware polygon laser direct im
   * Toolhead mount using 3 radial V-grooves on the scanhead PCB mating with 3 captive Ø 8.0 mm steel bearing balls on the dock base.
   * Clamped by 3 pairs of Ø 8.0 mm × 1.0 mm N52 magnets (~17 N pull, 0.40 mm magnet air gap).
   * PCB separation is 2.40 mm when docked.
-  * Mates with [maxwell_dock.kicad_pcb](file:///home/hexastorm/Documents/hardware/firestarter/lasermodule/maxwell_dock/maxwell_dock/maxwell_dock.kicad_pcb). Mounting to a CNC 3018 or extrusion frame requires an adapter plate; it is not a drop-in fit for Voron toolheads.
+  * Mates with [maxwell_dock.kicad_pcb](file:///home/hexastorm/Documents/hardware/firestarter/lasermodule/maxwell_dock/maxwell_dock/maxwell_dock.kicad_pcb). Mounting to a CNC 3018 or extrusion frame requires an adapter plate.
 
 <p align="center">
   <img src="./Images/kinematic_dock_view.png" width="75%" alt="Hexastorm Maxwell Kinematic Dock Interface">
@@ -66,6 +66,7 @@ FreeCAD design files for **Hexastorm**, an open-hardware polygon laser direct im
 ## CAD Environment
 
 ### 1. Git LFS
+
 This repository stores `.FCStd` files and images in Git LFS. Run before cloning:
 
 ```bash
@@ -76,6 +77,7 @@ git clone https://github.com/hstarmans/hexastorm_design.git
 *(If cloned without LFS, run `git lfs pull` inside the repository).*
 
 ### 2. FreeCAD Requirements
+
 * **FreeCAD**: 1.0 or higher.
 * **Workbenches**:
   * Assembly (built-in FreeCAD 1.0)
@@ -86,18 +88,21 @@ git clone https://github.com/hstarmans/hexastorm_design.git
 ---
 
 ## Optical Simulation & Ray Tracing
+
 Ray tracing and optical verification are handled by [opticaldesign](https://github.com/hstarmans/opticaldesign) (`pyoptools` and `prisms.cad_verifier`).
 
 Run with FreeCAD open:
+
 ```bash
 cd path/to/opticaldesign
 uv run python -m prisms.cad_verifier
 ```
+
 This traces rays through the diode, lenses, polygon facets, and mirror, and writes rays into FreeCAD under `Simulation/Rays`.
 
 ---
 
 ## Reference Videos
+
 * [Assembly 4 Design Overview (Legacy)](https://youtu.be/jhr6iEazbQk)
 * [Optical Simulation Walkthrough](https://youtu.be/kekMkjqzRjE)
-
