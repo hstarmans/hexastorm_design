@@ -10,6 +10,7 @@
 *.FCStd.*
 *.FCStd.lock
 *~
+*.blend1
 
 # Notes
 todo.md
@@ -18,4 +19,4 @@ todo.md
 .venv/
 __pycache__/
 *.lock
-.python-version
+.python-version
