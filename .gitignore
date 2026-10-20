@@ -23,6 +23,7 @@ renders/*.mp4
 renders/test_*.py
 renders/render_selected_batches.sh
 renders/render_test_stills.py
+models/
 
 # Notes
 todo.md
