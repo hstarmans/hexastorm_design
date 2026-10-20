@@ -7,6 +7,12 @@ FreeCAD design files for **Hexastorm**, an open-hardware polygon laser direct im
 * **Optical Simulation**: [opticaldesign (GitHub)](https://github.com/hstarmans/opticaldesign)
 
 <p align="center">
+  <img src="./Images/frame_0000.png" width="95%" alt="Hexastorm Assembly Render">
+  <br>
+  <em>Photorealistic 3D render of the Hexastorm scanhead mounted to a CNC 3018 frame with PCB exposure bed and controller.</em>
+</p>
+
+<p align="center">
   <img src="./Images/freecadpic_base.png" width="48%" alt="Hexastorm Base Configuration (without cylinder lenses)">
   <img src="./Images/freecadpic.png" width="48%" alt="Hexastorm with Cylinder Lenses">
   <br>
@@ -53,10 +59,16 @@ FreeCAD design files for **Hexastorm**, an open-hardware polygon laser direct im
 │   ├── mirrormotor.FCStd            # Polygon prism and PCB motor assembly
 │   └── ArducamUC621/                # Calibration & profiling fixtures
 ├── Images/
+│   ├── frame_0000.png               # Photorealistic render overview
 │   ├── freecadpic_base.png          # Base configuration (no cylinder lenses)
 │   ├── freecadpic.png               # Configuration with cylinder lenses
 │   ├── pcb_motor_view.png           # Internal layout with planar PCB motor and rotor
 │   └── kinematic_dock_view.png      # Kinematic dock underside view
+├── renders/
+│   ├── hexastorm_assembly.blend     # Blender 5.2 animation and render scene
+│   ├── render_animation.sh          # Headless forward GPU render script
+│   ├── encode_video.sh              # FFmpeg video assembly script
+│   └── README.md                    # Rendering and animation guide
 ├── AGENTS.md                        # CAD assistant & pair-programming guidelines
 └── README.md
 ```
@@ -102,7 +114,8 @@ This traces rays through the diode, lenses, polygon facets, and mirror, and writ
 
 ---
 
-## Reference Videos
+## Reference Videos & Animations
 
 * [Assembly 4 Design Overview (Legacy)](https://youtu.be/jhr6iEazbQk)
 * [Optical Simulation Walkthrough](https://youtu.be/kekMkjqzRjE)
+* [Blender 2K Animation & Video Pipeline](./renders/README.md)

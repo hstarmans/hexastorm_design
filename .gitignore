@@ -9,8 +9,20 @@
 *.FCStd[0-9]*
 *.FCStd.*
 *.FCStd.lock
+*backup*.FCStd
 *~
+
+# Blender backups and render artifacts
 *.blend1
+renders/*backup*.blend
+renders/frames/
+renders/audio/
+renders/test_shots/
+renders/*.png
+renders/*.mp4
+renders/test_*.py
+renders/render_selected_batches.sh
+renders/render_test_stills.py
 
 # Notes
 todo.md
@@ -20,3 +32,4 @@ todo.md
 __pycache__/
 *.lock
 .python-version
+
