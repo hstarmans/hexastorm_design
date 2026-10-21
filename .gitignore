@@ -14,11 +14,18 @@
 
 # Blender backups and render artifacts
 *.blend1
+*.blend.bak
+*.bak
 renders/*backup*.blend
+renders/pbr_cache/
+renders/hackaday/
 renders/frames/
 renders/audio/
 renders/test_shots/
 renders/*.png
+renders/*.jpg
+renders/*.jpeg
+renders/*.webp
 renders/*.mp4
 renders/test_*.py
 renders/render_selected_batches.sh
